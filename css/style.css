@@ -1,0 +1,45 @@
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  height: 55px;
+  width: 55px;
+  background-color: black;
+  border: 1px gray;
+}
+
+.empty {
+  background-color: gray;
+}
+
+.blackPiece {
+  background: black;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 5px;
+  width: 5px;
+  padding: 15px;
+}
+
+.redPiece {
+  background: red;
+  border: 1px solid white;
+  border-radius: 50px;
+  height: 5px;
+  width: 5px;
+  padding: 15px;
+}
+
+header {
+  text-align: center;
+}
+
+.header {
+  display: inline;
+}
+
+#redsTurn {
+  color: white;
+}

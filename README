@@ -1,1 +1,28 @@
-#game
+# ApplicationName
+## Concept: 
+A checkers game where you can pick different variants of the game that
+you want to play. The rules will be provided for each variant of the game.
+The variants that you will be able to pick are:
+    - American Checkers(most likely the one you're familiar with)
+    - Hexdame Checkers
+    - International Checkers
+    - Suicide Checkers
+
+## Wireframes:
+
+## Technologies Used:
+    - HTML
+    - CSS 
+    - JavaScript
+    - Jquery
+
+## Approach: 
+Start of by making the standard checkers game. Once I make all the logic for the
+standard game, reuse as much logic as I can for the different variants of the game
+
+## Challenges: 
+Creating the logic for all the different games variants. 
+Trying to reuse as much logic as I can between all the different variants.
+
+## App Demo 
+Link to GitHub project https://github.com/haydenharris0/game
