@@ -4,8 +4,8 @@ table {
 }
 
 td {
-  height: 55px;
-  width: 55px;
+  height: 57px;
+  width: 57px;
   background-color: black;
   border: 1px gray;
 }
@@ -15,21 +15,25 @@ td {
 }
 
 .blackPiece {
+  margin-left: auto;
+  margin-right: auto;
   background: black;
   border: 1px solid white;
   border-radius: 50px;
   height: 5px;
   width: 5px;
-  padding: 15px;
+  padding: 9px;
 }
 
 .redPiece {
+  margin-left: auto;
+  margin-right: auto;
   background: red;
   border: 1px solid white;
   border-radius: 50px;
   height: 5px;
   width: 5px;
-  padding: 15px;
+  padding: 9px;
 }
 
 header {
@@ -40,6 +44,13 @@ header {
   display: inline;
 }
 
+#blacksTurn {
+  font-weight: bold;
+}
 #redsTurn {
-  color: white;
+  font-weight: bold;
+}
+
+.socre {
+  display: inline;
 }
