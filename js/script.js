@@ -1,21 +1,24 @@
-//odds are the turn for black. red are even
-let turn = 2;
-game = 0;
+//jquery to set variables
+let $redClick = $(".redPiece");
+let $blackClick = $(".blackPiece");
 
+let turn = 1;
+//function called
 
-//handles the click
-if (turn  === 2){
-    $(".blackPiece").click(function(){
-        x.preventDefault();
-        turn += 1;
-        console.log(turn);
-        return false;
-});
+const rules = function (){
+    x === 1;
+    x ++;
+    return x;
 }
 
-else if(turn  === 3) {
-    $(".redPiece").click(function(){
-        turn += 1;
-        return console.log(turn);
-});
+
+const blackAlertClicked = function(rules){
+    console.log(`black clicked turn = ${turn}`)
 }
+
+const redAlertClicked = function(){
+    console.log(`red clicked turn = ${turn}`)
+}
+
+    $redClick.click(redAlertClicked);
+    $blackClick.click(blackAlertClicked);
