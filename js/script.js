@@ -3,7 +3,9 @@ let $redClick = $(".redPiece");
 let $blackClick = $(".blackPiece");
 
 let turn = 1;
-//function called
+blackScore = 12;
+redScore = 12;
+let $scoreBoard = $("#score").html(`Black has ${blackScore} pieces left | Red has ${redScore} pieces left`);
 
 const rules = function (){
     x === 1;
@@ -12,13 +14,13 @@ const rules = function (){
 }
 
 
-const blackAlertClicked = function(rules){
-    console.log(`black clicked turn = ${turn}`)
+const blackAlertClicked = function(){
+    console.log(`black clicked turn = ${turn}`);
 }
 
 const redAlertClicked = function(){
-    console.log(`red clicked turn = ${turn}`)
+    console.log(`red clicked turn = ${turn}`);
 }
 
-    $redClick.click(redAlertClicked);
-    $blackClick.click(blackAlertClicked);
+$redClick.click(redAlertClicked);
+$blackClick.click(blackAlertClicked);
