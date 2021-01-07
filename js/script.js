@@ -35,7 +35,8 @@ const updateScoreBoard = function(){
 const blackClick = function(){
     for (let i = 0; i < currentSelection.length; i++){
         currentSelection[i].click(blackAlertClicked);
-        currentSelection[i].css({'border': 'solid yellow'});
+
+        //currentSelection[i].css({'border': 'solid yellow'});
     }
 }
 
@@ -70,6 +71,8 @@ const whosTurn = function(){
     
 }
 
-blackClick();
-redClick();
+//blackClick();
+//redClick();
 //console.log(currentSelection);
+
+makePiecesClickable();

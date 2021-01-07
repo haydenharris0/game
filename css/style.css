@@ -1,6 +1,5 @@
-table {
-  margin-left: auto;
-  margin-right: auto;
+* {
+  margin: auto;
 }
 
 td {
@@ -15,8 +14,6 @@ td {
 }
 
 .blackPiece {
-  margin-left: auto;
-  margin-right: auto;
   background: black;
   border: 1px solid white;
   border-radius: 50px;
@@ -25,9 +22,11 @@ td {
   padding: 9px;
 }
 
+span {
+  display: flex;
+}
+
 .redPiece {
-  margin-left: auto;
-  margin-right: auto;
   background: red;
   border: 1px solid white;
   border-radius: 50px;
