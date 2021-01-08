@@ -10,21 +10,44 @@ const boardStructure = [
     21, null, 22, null, 23, null, 24, null
 ];
 
-
-//option 2 of trying to handle the click
-let currentSelection = [
-    $("#black1"), $("#black2"), $("#black3"), $("#black4"),
-    $("#black5"), $("#black6"), $("#black7"), $("#black8"),
-    $("#black9"), $("#black10"), $("#black11"), $("#black12"),
-];
+//DOM variables
+const $squares = document.querySelectorAll("td");
+let $blackPiece = document.querySelectorAll("span")
+let $redPiece = document.querySelectorAll("p");
 
 //setting varialbes
-let $blackClick = $(".blackPiece");
-let $redClick = $(".redPiece");
 let turn = 0;
 let blackScore = 12;
 let redScore = 12;
+let playerRemainingPieces;
 let $scoreBoard = $("#score").html(`Black has ${blackScore} pieces left | Red has ${redScore} pieces left`);
+let currentPiece = {
+    pieceLocation: 0,
+    boardLocation: 0,
+    plusSeven: false,
+    plusNine: false,
+    plusSevenJump: false,
+    plusNineJump: false,
+    minusSeven: false,
+    minusNine: false,
+    minusSevenJump: false,
+    minusNineJump: false,
+    king: false
+    
+}
+
+const makesPiecesClickable = function() {
+    if (turn === 0) {
+        for (let i = 0; i < $blackPiece.length; i++) {
+            $blackPiece[i].addEventListener("click", getPlayerPieces);
+        }
+    }
+    else {
+        for (let i = 0; i < $redPiece.length; i++) {
+            $redPiece[i].addEventListener("click", getPlayerPieces);
+        }
+    }
+}
 
 //update scoreboard function ---works but does it instantly.. need to find a good place to put it
 const updateScoreBoard = function(){
