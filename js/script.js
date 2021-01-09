@@ -242,7 +242,7 @@ const movePiece = function(number) {
     $squares[currentPiece.boardLocation].innerHTML = "";
 
     if (turn === 0) {
-        if (currentPiece.king) {
+        if (currentPiece.king === true) {
             $redPiece = document.querySelectorAll("p");
             $squares[currentPiece.boardLocation + number].innerHTML = `<span class="blackPiece king" id="${currentPiece.pieceLocation}"></span>`;
         }
@@ -252,7 +252,7 @@ const movePiece = function(number) {
         }
     } 
     else {
-        if (currentPiece.king) {
+        if (currentPiece.king === true) {
             $blackPiece = document.querySelectorAll("span");
             $squares[currentPiece.boardLocation + number].innerHTML = `<p class="redPiece king" id="${currentPiece.pieceLocation}"></p>`;
         } 
@@ -298,7 +298,7 @@ const boardStructureChanges = function(indexOfBoardPiece, modifiedIndex, removeP
     cancelClick();
 }
 
-// Switches players turn
+// Switches players turn -- will update this to allow double jumps
 const switchTurn = function() {
     if (turn === 0) {
         $blacksTurn.style.color = "white";
@@ -333,7 +333,7 @@ const updateScoreBoard = function(){
     $scoreBoard = $("#score").html(`Black has ${blackScore} pieces left | Red has ${redScore} pieces left`);
 }
 
-// Checks for a win
+// Checks for a win --need to update to let player win if other player doesn't have any legal moves
 const winLogic = function() {
     if (blackScore === 0) {
             alert("Red Wins");
