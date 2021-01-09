@@ -276,7 +276,7 @@ const movePiece = function(number) {
 
 // changes the boardstructure declared at the very beginning
 const boardStructureChanges = function(indexOfBoardPiece, modifiedIndex, removePiece) {
-    if (turn === 0 && currentPiece.pieceLocation < 12 && modifiedIndex >= 57) document.getElementById(currentPiece.pieceLocation).classList.add("king")
+    if (turn === 0 && currentPiece.pieceLocation < 12 && modifiedIndex >= 56) document.getElementById(currentPiece.pieceLocation).classList.add("king")
     
     if (turn === 1 && currentPiece.pieceLocation >= 12 && modifiedIndex <= 7) document.getElementById(currentPiece.pieceLocation).classList.add("king");
     
