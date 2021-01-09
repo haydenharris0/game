@@ -264,12 +264,9 @@ const movePiece = function(number) {
 
     let pieceLocation = currentPiece.boardLocation;
 
-    if (number === 14 || number === -14 || number === 18 || number === -18) {
-        boardStructureChanges(pieceLocation, pieceLocation + number, pieceLocation + number / 2);
-    } 
-    else {
-        boardStructureChanges(pieceLocation, pieceLocation + number);
-    }
+    if (number === 14 || number === -14 || number === 18 || number === -18) boardStructureChanges(pieceLocation, pieceLocation + number, pieceLocation + number / 2);
+    
+    else boardStructureChanges(pieceLocation, pieceLocation + number);
 
     removeEventListeners();
 }

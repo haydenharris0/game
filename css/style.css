@@ -3,8 +3,8 @@
 }
 
 td {
-  height: 57px;
-  width: 57px;
+  height: 60px;
+  width: 60px;
   background-color: black;
   border: 1px gray;
 }
@@ -17,9 +17,9 @@ td {
   background: black;
   border: 1px solid white;
   border-radius: 50px;
-  height: 5px;
-  width: 5px;
-  padding: 9px;
+  height: 12px;
+  width: 12px;
+  padding: 10px;
 }
 
 .king.blackPiece {
@@ -30,6 +30,8 @@ td {
     goldenRod 10px,
     black 20px
   );
+  height: 17px;
+  width: 17px;
 }
 
 span {
@@ -40,9 +42,9 @@ span {
   background: red;
   border: 1px solid white;
   border-radius: 50px;
-  height: 5px;
-  width: 5px;
-  padding: 9px;
+  height: 12px;
+  width: 12px;
+  padding: 10px;
 }
 
 .king.redPiece {
@@ -53,6 +55,8 @@ span {
     darkOliveGreen 10px,
     darkOliveGreen 20px
   );
+  height: 17px;
+  width: 17px;
 }
 
 header {
