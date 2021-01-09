@@ -22,6 +22,16 @@ td {
   padding: 9px;
 }
 
+.king.blackPiece {
+  background: repeating-linear-gradient(
+    45deg,
+    black,
+    black 10px,
+    goldenRod 10px,
+    black 20px
+  );
+}
+
 span {
   display: flex;
 }
@@ -35,6 +45,16 @@ span {
   padding: 9px;
 }
 
+.king.redPiece {
+  background: repeating-linear-gradient(
+    45deg,
+    crimson,
+    crimson 10px,
+    darkOliveGreen 10px,
+    darkOliveGreen 20px
+  );
+}
+
 header {
   text-align: center;
 }
@@ -44,9 +64,11 @@ header {
 }
 
 #blacksTurn {
+  color: black;
   font-weight: bold;
 }
 #redsTurn {
+  color: white;
   font-weight: bold;
 }
 
